@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Social Circle Hover</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/474x/5b/94/78/5b9478d23dba44888111f3a94d91325d.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: rgba(236, 213, 213, 0.233);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(8px);
+        }
+
+        h1 {
+            color: rgba(255, 255, 255, 0.555);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin-top: 20px;
+        }
+
+        .circle-container {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            overflow: hidden;
+        }
+
+        .circle-container a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Default translucent white */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        .circle-container a:hover.insta {
+            background-color: #e1306c;
+        }
+
+        .circle-container a:hover.twitter {
+            background-color: #1da1f2;
+        }
+
+        .circle-container a:hover.github {
+            background-color: #333;
+        }
+
+        .circle-container a:hover.discord {
+            background-color: #5865f2;
+        }
+
+        .circle-container a:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="circle-container">
+            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="github"><i class="fab fa-github"></i></a>
+            <a href="#" class="discord"><i class="fab fa-discord"></i></a>
+        </div>
+        <h1>Hello World</h1>
+    </div>
+</body>
+
+</html>
